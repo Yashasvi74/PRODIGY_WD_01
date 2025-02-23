@@ -19,12 +19,15 @@ A simple, fully responsive landing page built using HTML, CSS, and JavaScript. T
 │── README.md        # Documentation
 │── assets/          # (Optional) Images, fonts, etc.
 
+![image](https://github.com/user-attachments/assets/566a7206-3885-4c6a-a1c3-4f7e1b7b5db0)
+![image](https://github.com/user-attachments/assets/77071ba3-f22e-43f7-813b-31099b3d29d2)
 
 
 📱 Mobile Responsiveness
 ✔️ The navigation bar turns into a hamburger menu on smaller screens
 ✔️ Sections are stacked and centered for better readability
 ✔️ Uses CSS media queries for adaptive styling
+![image](https://github.com/user-attachments/assets/0ab4048d-6884-4a1d-8e1b-c38a8cd50260)
 
 🛠 Technologies Used
 HTML5 – Structuring the webpage
