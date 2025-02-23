@@ -20,6 +20,7 @@ A simple, fully responsive landing page built using HTML, CSS, and JavaScript. T
 │── assets/          # (Optional) Images, fonts, etc.
 
 
+
 📱 Mobile Responsiveness
 ✔️ The navigation bar turns into a hamburger menu on smaller screens
 ✔️ Sections are stacked and centered for better readability
