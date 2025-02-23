@@ -1,0 +1,153 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Navigation Bar */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between; /* Logo on left, nav-links on right */
+    align-items: center;
+    padding: 15px 50px;
+    background: #ff5733;
+    transition: 0.3s;
+}
+
+/* Logo Styling */
+.navbar .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    flex-shrink: 0; /* Prevents logo from resizing */
+}
+
+/* Navigation Links */
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px; /* Ensures equal spacing */
+    margin-left: auto; /* Pushes nav-links to the right */
+    padding: 0;
+}
+
+.nav-links li {
+    display: inline-block;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    transition: color 0.3s;
+    display: block;
+    padding: 10px 15px;
+}
+
+/* Hover Effect */
+.nav-links a:hover {
+    color: yellow;
+}
+
+/* Remove Unnecessary Rule */
+.navbar.nav-links {
+    margin-left: 0;
+}
+
+/* Scrolling Effect */
+.navbar.scrolled {
+    background: #333;
+}
+
+/* Section Styling */
+section {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+/* Different Sections */
+#home {
+    background: #ff5733;
+    color: white;
+}
+
+#about {
+    background: #33c1ff;
+    color: white;
+}
+
+#services {
+    background: #8e44ad;
+    color: white;
+}
+
+#contact {
+    background: #27ae60;
+    color: white;
+}
+
+/* Responsive Navbar for Smaller Screens */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        text-align: center;
+        padding: 15px;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 10px;
+        margin-left: 0;
+    }
+}
+/* Hamburger Menu Icon */
+.hamburger {
+    display: none; /* Hidden by default */
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+}
+
+/* Mobile Responsive Navbar */
+@media (max-width: 768px) {
+    .hamburger {
+        display: block; /* Show menu button on mobile */
+        position: absolute;
+        right: 20px;
+        top: 15px;
+    }
+
+    .nav-links {
+        display: none; /* Hide menu by default */
+        flex-direction: column;
+        background: #ff5733;
+        width: 100%;
+        position: absolute;
+        top: 50px;
+        left: 0;
+        padding: 10px 0;
+        text-align: center;
+    }
+
+    .nav-links.show {
+        display: flex; /* Show when active */
+    }
+
+    .nav-links li {
+        display: block;
+        padding: 10px;
+    }
+}
